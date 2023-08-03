@@ -39,6 +39,16 @@ typedef struct levelorder_queue_s
 	struct levelorder_queue_s *next;
 } levelorder_queue_t;
 
+/* Structure for linked list of nodes */
+typedef struct link_s link_t;
+
+struct link_s
+{
+    size_t n;
+    const binary_tree_t *node;
+    struct link_s *next;
+};
+
 /* print function */
 void binary_tree_print(const binary_tree_t *);
 
